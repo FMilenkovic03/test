@@ -24,7 +24,8 @@ p{
 
 
 .containerLabelButton{
-    display: flex;
+    position: relative;
+    display: inline-block;
 }
 
 input[type=text]{
@@ -39,16 +40,22 @@ input[type="texte"]:focus{
     border-color: #3B703B;
 }
 
-
 .buttonVisual{
-    width: 37px;
-    height: 37px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    width: 36px;
+    height: 36px;
     background-color: #3B703B;
+    border-radius: 0px 4px 4px 0px;
+
+    cursor: pointer;
 }
+
 .buttonVisual:hover {
     background-color: #2D562D;
 }
-
 
 .center{
     position: absolute;
