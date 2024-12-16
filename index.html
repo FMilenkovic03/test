@@ -9,16 +9,19 @@
 </head>
 <body>
 
-    <div class="mainVisual center">
+    <div id="myDiv" class="mainVisual center">
         <h1>To-do List</h1>
         <div class="containerLabelButton">
-            <input type="text" name="ajoutez tâche" placeholder="Ajoutez une tâche">
-            <button class ="buttonVisual">✔</button>
+            <input  type="text" id= "myInput" placeholder="Ajoutez une tâche">
+            <button onclick="newElement()" class ="buttonVisual">✔</button>
         </div>
-        <ul></ul>
+
+        <ul id="myUL">
+            
+        </ul>
     </div>
     
-    <!--<script src="script.js"></script>-->
+    <script src="script.js"></script>
     
 </body>
 </html>
