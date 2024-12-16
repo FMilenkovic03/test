@@ -1,3 +1,7 @@
+*{
+    font-family: Arial;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -6,15 +10,19 @@ body{
     background-color: #FAF4D0;
 }
 
+h1 {
+    color: white;
+}
+
 
 /* enleve margin et padding des listes */
 ul {
     margin: 0;
     padding: 0;
-  }
-  
-  /* Stylisé les items de la liste */
-  ul li {
+}
+
+/* Stylisé les items de la liste */
+ul li {
     cursor: pointer;
     position: relative;
     padding: 8px;
@@ -22,31 +30,32 @@ ul {
     font-size: 18px;
     transition: 0.2s;
     list-style: none;
+    color: white;
     margin: 5px 0;
     border-radius: 5px;
-
+    
     /* liste unselectable*/
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-  
-  
-  /* pendant hovering couleur plus sombre*/
-  ul li:hover {
+}
+
+/* pendant hovering couleur plus sombre*/
+ul li:hover {
+    color: black;
     background: #ddd;
-  }
-  
-  /* changement de visuel lors après click */
-  ul li.checked {
+}
+
+/* changement de visuel lors après click */
+ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
-  }
-  
-  /* ajoute un effet lorsque c'est checked */
-  ul li.checked::before {
+}
+
+/* ajoute un effet lorsque c'est checked */
+ul li.checked::before {
     content: '';
     position: absolute;
     border-color: #fff;
@@ -57,10 +66,10 @@ ul {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
-  }
-  
-  /* bouton fermé stylisé */
-  .close {
+}
+
+/* bouton fermé stylisé */
+.close {
     position: absolute;
     right: 0;
     top: 50%;
@@ -81,7 +90,6 @@ ul {
     background-color: red;
 }
 
-
 /* Texte */
 
 p{
@@ -89,7 +97,6 @@ p{
 }
 
 /* Conteneur principal */
-
 .mainVisual{
     padding: 20px 40px;
     background-color: #703B3B;
@@ -99,8 +106,6 @@ p{
 }
 
 /* Conteneur du label et bouton */
-
-
 .containerLabelButton{
     position: relative;
     display: inline-block;
@@ -127,14 +132,13 @@ input[type="text"]:focus{
     height: 36px;
     background-color: #3B703B;
     border-radius: 0px 4px 4px 0px;
-
+    
     cursor: pointer;
 }
 
 .buttonVisual:hover {
     background-color: #2D562D;
 }
-
 
 /*centrer les éléments*/
 .center{
