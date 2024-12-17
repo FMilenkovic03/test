@@ -130,6 +130,7 @@ input[type="text"]:focus{
     border: none;
     width: 36px;
     height: 36px;
+    color: white;
     background-color: #3B703B;
     border-radius: 0px 4px 4px 0px;
     

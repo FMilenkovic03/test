@@ -33,13 +33,13 @@ function newElement(){
     var inputValue = document.getElementById("myInput");
     var t = document.createTextNode(inputValue.value);
     li.appendChild(t);
-    if (inputValue === ''){
+    if (inputValue.value === ''){
         alert("vous devez écrire quelque chose !");
         return;
     }else{
         document.getElementById("myUL").appendChild(li);
     }
-    
+
     document.getElementById("myInput").value = "";
     
     var button = document.createElement("BUTTON");
