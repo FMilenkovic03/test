@@ -42,6 +42,7 @@ function newElement(){
 
     document.getElementById("myInput").value = "";
     
+    // ici bouton close pour les nouveaux éléments
     var button = document.createElement("BUTTON");
     var txt = document.createTextNode("\u00D7");
     button.className = "close";
